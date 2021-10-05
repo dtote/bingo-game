@@ -58,7 +58,7 @@ const checkGameStatus = () => {
 };
 const setGameMessage = (message) => {
   if (message !== "") {
-    alert(message);
+    setTimeout(() => { alert(message); }, 500);
     pickerButton.disabled = true;
   }
 };
